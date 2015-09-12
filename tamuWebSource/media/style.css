@@ -1,0 +1,69 @@
+nav
+{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    position: static;
+}
+
+div
+{
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  position: block;
+  left: 20%;
+}
+
+h2.sectionTitle
+{
+  text-align: left;
+}
+
+#interInfo
+{
+  width: 50%
+
+}
+
+
+
+#interInfo ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+#interInfo li
+{
+  clear: both;
+}
+
+#interInfo a
+{
+  text-decoration: none;
+}
+
+#interInfo li:nth-child(odd)
+{
+  text-align: left;
+}
+
+#interInfo li:nth-child(even)
+{
+  text-align: right;
+}
+
+.taskTitle
+{
+  margin: 0;
+  padding: 0;
+}
+
+.taskSubtitle
+{
+  margin: 0;
+  padding: 0;
+}
