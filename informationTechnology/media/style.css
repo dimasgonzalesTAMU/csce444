@@ -148,6 +148,12 @@ body
 	position: absolute;
 }
 
+#exh1 img
+{
+  height: 200px;
+  width: 150px;
+}
+
 #exb2
 {
 	margin: 7px 0px 0px 209px;
@@ -164,7 +170,7 @@ body
 
 #link1
 {
-	width: 175px;
+	width: 165px;
 	margin: 214px 0px 0px 29px;
 	display: inline;
 	position: absolute;
