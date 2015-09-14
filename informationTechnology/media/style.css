@@ -78,10 +78,18 @@ body
 #aside
 {
   width: 137px;
-  height: 471px;
+  height: 462px;
   margin-top: 4px;
   margin-left: 15px;
+  padding: 10px 0px 0px 0px;
   display:inline-block;
+  letter-spacing: .2px;
+  font-size: .8em
+}
+
+#aside p
+{
+    padding-top: 2.5px
 }
 
 #aside p.mainIdea
@@ -96,9 +104,15 @@ body
   padding-left: 20px;
 }
 
+#asideSearch
+{
+  margin-top: 10px;
+}
+
 #asideSearch input
 {
   width: 85px;
+  margin-left: 5px;
 }
 
 #specialExhibitions
@@ -341,6 +355,15 @@ body
 
   display: inline;
   position: absolute;
+}
+
+#moreSpeExh
+{
+    width: 200px;
+    margin: 260px 0px 0px 426px;
+
+    display: inline;
+    position: absolute;
 }
 
 #footer
