@@ -4,7 +4,7 @@
 
 <title>The Metropolitan Museum of Art, New York: metmuseum.org</title>
 </head>
-<body>
+<body id='daBody'>
   <div id='pageWrapper' class='showIt'>
 
     <div id='header'>
@@ -116,7 +116,7 @@
               <img src='media/ho_green_co_aps.gif' />
               <div>
                 <a id="">The Collection</a>
-                <p>New: View more than 3,000 works of </p><a id="">American art</a>
+                <span>New: View more than 3,000 works of </span><a id="">American art</a>
               </div>
 
             </div>
@@ -132,12 +132,18 @@
 
       </div>
       <div id="footer">
-          <a id="copyright">
-              &#64;2000&#45;2004 The Metropolitan Museum of Art. All rights reserved.
-          </a>
-          <a id="terms" >Terms and Conditions | Privacy Policy</a>
-          <a id="contact" >Contact Information | Career Opportunities</a>
-          <a id="acknowledgments">Acknowledgments</a>
+          <div id="copyright">
+              &#169; 2000&#45;2004 The Metropolitan Museum of Art. All rights reserved.
+          </div>
+          <div id="terms">
+              <a  >Terms and Conditions</a> | <a>Privacy Policy</a>
+          </div>
+          <div id="contact">
+              <a  >Contact Information</a> | <a>Career Opportunities</a>
+          </div>
+          <div id="acknowledgments">
+              <a >Acknowledgments</a>
+          </div>
       </div>
     </div>
   </div>
@@ -151,10 +157,10 @@ document.getElementById("metToggle").addEventListener("click", function(){
     dom_pageWrapper.classList.toggle('showIt');
     dom_pageWrapper.classList.toggle('hideIt');
 
-    document.body.style.backgroundImage = "url(media/MetScreenshot.png)";
+    document.getElementById('daBody').classList.toggle('theRealMet');
   }
   else{
-    document.body.style.backgroundImage = "none";
+    document.getElementById('daBody').classList.toggle('theRealMet');
 
     dom_pageWrapper.classList.toggle('showIt');
     dom_pageWrapper.classList.toggle('hideIt');

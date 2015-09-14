@@ -3,6 +3,15 @@ body
   background-color: #809A80;
 }
 
+.theRealMet
+{
+    background-image: url("MetScreenshot.png");
+    background-size: 1920px 996px;
+    background-repeat: no-repeat;
+
+}
+
+
 #pageWrapper
 {
   width:750px;
@@ -22,7 +31,8 @@ body
   background-color: #6e816e;
 
   font-family: 'Arial Narrow', Arial, sans-serif;
-  font-size: .8em;
+  font-size: .75em;
+  font-weight: 100;
   color: white;
 }
 
@@ -31,6 +41,8 @@ body
   margin-left: 14px;
   width: 712px;
   height: 15px;
+
+  letter-spacing: .8px
 }
 
 #whatTitle
@@ -66,7 +78,7 @@ body
 #aside
 {
   width: 137px;
-  height: 491px;
+  height: 471px;
   margin-top: 4px;
   margin-left: 15px;
   display:inline-block;
@@ -146,16 +158,23 @@ body
 
 #link1
 {
-  width:150px;
-  margin: 210px 0px 0px 29px;
+    width:175px;
+    margin: 214px 0px 0px 29px;
 
-  display: inline;
-  position: absolute;
+    display: inline;
+    position: absolute;
+
+    font-weight: 100;
+}
+
+#link1 a
+{
+    transform: scaleY(1.5);
 }
 
 #link2
 {
-  width:150px;
+  width:175px;
   margin: 210px 0px 0px 209px;
 
   display: inline;
@@ -182,7 +201,7 @@ body
 
 #highTitle span
 {
-  padding-left: 5px
+  padding-left: 15px
 }
 
 #highlights
@@ -197,7 +216,24 @@ body
   background-color: #6e816e;
   font-family: 'Arial Narrow', Arial, sans-serif;
   font-size: .8em;
+  letter-spacing: .8px;
   color: white;
+}
+
+#highlights a
+{
+    border-collapse: separate;
+    color: white;
+    font-size: 1em;
+    text-align: -webkit-left;
+    text-decoration: underline;
+}
+
+#highlights p,
+#highlights span
+{
+    margin: 0;
+    color: rgb(255,255,204);
 }
 
 #highTop1
@@ -212,6 +248,7 @@ body
 #highTop1 div
 {
   width: 100px;
+  margin: 0px 0px 0px 8px;
 
   display: inline;
   position: absolute;
@@ -229,6 +266,7 @@ body
 #highTop2 div
 {
   width: 100px;
+  margin: 0px 0px 0px 8px;
 
   display: inline;
   position: absolute;
@@ -245,7 +283,8 @@ body
 
 #highTop3 div
 {
-  width: 100px;
+  width: 120px;
+  margin: 0px 0px 0px 8px;
 
   display: inline;
   position: absolute;
@@ -263,6 +302,7 @@ body
 #highBot1 div
 {
   width: 100px;
+  margin: 0px 0px 0px 8px;
 
   display: inline;
   position: absolute;
@@ -280,6 +320,7 @@ body
 #highBot2 div
 {
   width: 100px;
+  margin: 0px 0px 0px 8px;
 
   display: inline;
   position: absolute;
@@ -296,11 +337,55 @@ body
 #highBot3 div
 {
   width: 100px;
+  margin: 0px 0px 0px 8px;
 
   display: inline;
   position: absolute;
 }
 
+#footer
+{
+    width: 567px;
+    margin: 15px 0px 0px 184px;
+
+    display: inline;
+    position: absolute;
+
+    color: rgb(255, 255, 204);
+    font-family: geneva, arial, sans-serif;
+    font-size: 10px;
+}
+
+#footer a
+{
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+/*#terms
+{
+    margin: 15px 0px 0px 0px;
+
+    display: inline;
+    position: absolute;
+}*/
+
+#contact
+{
+    margin: 10px 0px 0px 0px;
+
+    display: inline;
+    position: absolute;
+}
+
+#acknowledgments
+{
+    margin: 37px 0px 0px 0px;
+
+    display: inline;
+    position: absolute;
+}
 button
 {
   position: fixed;
