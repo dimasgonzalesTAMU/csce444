@@ -1,0 +1,164 @@
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='media/style.css'/>
+
+<title>The Metropolitan Museum of Art, New York: metmuseum.org</title>
+</head>
+<body>
+  <div id='pageWrapper' class='showIt'>
+
+    <div id='header'>
+      <img src='media/ho_green_mast1.gif'/>
+    </div>
+
+    <div id='topTitle'>
+      <div id='whatTitle' class='content'>
+        <span >What's Online</span>
+      </div>
+      <div id='exbTitle' class='content'>
+        <span>Special Exhibitions</span>
+      </div>
+    </div>
+
+    <div id='middlePackage'>
+      <div id='aside' class='content'>
+        <p class='mainIdea'>The Collection</p>
+        <p class='subIdea'>Explore & Learn</p>
+        <p class='subIdea'>Timeline of Art History</p>
+        <p class='mainIdea'>The Met Store</p>
+        <p class='mainIdea'>Membership</p>
+        <p class='subIdea'>Support the Met</p>
+        <p class='mainIdea'>Visitor Information</p>
+        <p class='subIdea'>Calender</p>
+        <p class='subIdea'>The Cloisters</p>
+        <p class='subIdea'>Concerts & Lectures</p>
+        <p class='subIdea'>Educational Resources</p>
+        <p class='subIdea'>Events & Programs</p>
+        <p class='subIdea'>FAQs</p>
+        <p class='subIdea'>Special Exhibitions</p>
+        <p class='mainIdea'>My Met Museum</p>
+        <p class='mainIdea'>News from the Met</p>
+        <p class='mainIdea'>Site Index</p>
+
+        <div id='asideSearch'>
+          <p class='mainIdea'>Search</p>
+          <input id='searchBox' type='text'/>
+          <a href=""><img src='media/ho_green_go.gif'></a>
+        </div>
+      </div>
+
+      <div id='specialExhibitions'>
+        <div id='exb1' >
+          <img src='media/chuck_big.jpg'/>
+        </div>
+        <div id='exb2' >
+            <img src='media/tla_big.jpg'/>
+        </div>
+        <div id='exb3' >
+          <img src='media/gifford.jpg'/>
+        </div>
+        <div id='link1'>
+          <a>Chuck Close Prints: Process and Collaboration</a>
+          <p>Through April 18, 2004</p>
+        </div>
+        <div id='link2'>
+          <a>
+            Treasures of a Lost Art: Italian Manuscript Painting of the
+            Middle Ages and Renaissance
+          </a>
+          <p>Through March 21, 2004</p>
+        </div>
+        <div id='link3'>
+          <a>
+            Hudson River School Visions: The Landscapes of Sanford R. Gifford
+          </a>
+          <p>Through February 8, 2004</p>
+        </div>
+      </div>
+
+        <div id='highTitle' class="content">
+          <span>Selected Highlights</span>
+        </div>
+        <div id='highlights'>
+          <div id=highTopRow>
+            <div id=highTop1>
+              <img src='media/ho_green_nam_jan04.gif' />
+              <div>
+                <a id="">Now at the Met</a>
+                <p>A guide to what's new in the galleries and online.</p>
+              </div>
+
+            </div>
+            <div id=highTop2>
+              <img src='media/ho_green_bag.gif' />
+              <div>
+                <a id="">The Met Store</a>
+                <p>Experience the fine art of shopping online.</p>
+              </div>
+            </div>
+            <div id=highTop3>
+              <img src='media/ho_green_button.gif' />
+              <div>
+                <a id="">Membership</a>
+                <p>Become a Member and receive many benefits.</p>
+              </div>
+            </div>
+          </div>
+          <div id='highBotRow'>
+            <div id=highBot1>
+              <img src='media/ho_green_mkids.gif' />
+              <div>
+                <a id="">MuseumKids</a>
+                <p>Spend family time at the Met.</p>
+              </div>
+            </div>
+            <div id=highBot2>
+              <img src='media/ho_green_co_aps.gif' />
+              <div>
+                <a id="">The Collection</a>
+                <p>New: View more than 3,000 works of </p><a id="">American art</a>
+              </div>
+
+            </div>
+            <div id=highBot3>
+              <img src='media/ho_green_mmm_william.gif' />
+              <div>
+                <a id="">My Met Museum</a>
+                <p>Receive free Met News email newsletters.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="footer">
+          <a id="copyright">
+              &#64;2000&#45;2004 The Metropolitan Museum of Art. All rights reserved.
+          </a>
+          <a id="terms" >Terms and Conditions | Privacy Policy</a>
+          <a id="contact" >Contact Information | Career Opportunities</a>
+          <a id="acknowledgments">Acknowledgments</a>
+      </div>
+    </div>
+  </div>
+  <button id='metToggle'>Toggle the Met</button>
+</body>
+<script>
+document.getElementById("metToggle").addEventListener("click", function(){
+  var dom_pageWrapper = document.getElementById("pageWrapper");
+
+  if(dom_pageWrapper.classList.contains('showIt')){
+    dom_pageWrapper.classList.toggle('showIt');
+    dom_pageWrapper.classList.toggle('hideIt');
+
+    document.body.style.backgroundImage = "url(media/MetScreenshot.png)";
+  }
+  else{
+    document.body.style.backgroundImage = "none";
+
+    dom_pageWrapper.classList.toggle('showIt');
+    dom_pageWrapper.classList.toggle('hideIt');
+  }
+});
+</script>
+</html>
