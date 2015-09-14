@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <link rel='stylesheet' type='text/css' href='media/style.css' />
+
+    <title>The Metropolitan Museum of Art, New York: metmuseum.org</title>
+</head>
+
+<body id='daBody' class='theRealMet'>
+
+    <form id='metToggle'>
+        <input type="radio" name="pageToggle" value="original" checked>Original</input>
+        <input type="radio" name="pageToggle" value="mymet1">My Met</input>
+        <input type="radio" name="pageToggle" value="mymet2">My Met v2</input>
+    </form>
+</body>
+<script>
+    document.getElementById("metToggle").addEventListener("click", function(e) {
+        var dom_pageWrapper = document.getElementById("pageWrapper");
+
+        var radios = document.getElementsByName('pageToggle');
+        for (var i = 0, length = radios.length; i < length; i++) {
+            if (radios[i].checked) {
+                switch (radios[i].value) {
+                    case "original":
+                        location.href = 'metPageOriginal.html'
+                        break;
+                    case "mymet1":
+                        location.href = 'myMetPage.html'
+                        break;
+                    case "mymet2":
+                        location.href = 'myMetPage2.html'
+                        break;
+                }
+                break;
+            }
+        }
+    });
+</script>
+
+</html>
